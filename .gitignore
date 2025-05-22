@@ -1,5 +1,6 @@
 Helsinki-NLP/
 distilbert-base-*/
+wandb/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
