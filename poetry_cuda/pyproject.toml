@@ -1,0 +1,31 @@
+[project]
+name = "poetry-cuda"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Erick",email = "edcm.erick@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "torch (==2.6.0+cu126)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+
+[[tool.poetry.source]]
+name = "torch"
+url = "https://download.pytorch.org/whl/cu126"
+priority = "supplemental"
+
+
+[tool.poetry.dependencies]
+torch = {source = "torch"}
